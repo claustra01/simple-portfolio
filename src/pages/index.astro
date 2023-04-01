@@ -17,6 +17,14 @@ import Card from '../components/Card.astro';
 			福岡の情報系の学科に通う大学2年生。某創作サークルの技術系コミュニティに所属。<br/>
 			個人開発やハッカソンでWebアプリ、Bot、Modなどを作っています。<br/>
 		</p>
+		<p class="skills">
+			<strong>技術スタック</strong><br/>
+			言語: TypeScript, JavaScript, Python, Golang, Java, C++, C, Rust<br/>
+			フレームワーク: React, Next.js, Astro.js, Nest.js<br/>
+			データベース: PostgreSQL, CosmosDB<br/>
+			インフラ: Azure, Docker, GitHub Actions, fly.io<br/>
+			その他: Git, VSCode, Postman, ORM
+		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
 				href=""
@@ -89,6 +97,17 @@ import Card from '../components/Card.astro';
 	}
 	.profile strong {
 		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	.skills {
+		line-height: 2;
+		margin: 1rem 0;
+		background-color: white;
+		padding: 1.5rem;
+		border-radius: 1rem;
+	}
+	.skills strong {
+		font-size: 1.2rem;
 		font-weight: bold;
 	}
 	.link-card-grid {
