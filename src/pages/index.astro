@@ -1,22 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import Modal from '../components/Modal.astro'
 ---
 
 <Layout title="claustra01's Portfolio">
 	<main>
 		<h1><span class="text-gradient">claustra01</span>'s Portfolio</h1>
 		<p class="profile">
-			claustra01<br/>
+			<strong>claustra01</strong>
+			<a href="https://github.com/claustra01">
+				<img height="18" width="18" src="/github.svg" alt="github" style="margin-left:0.75rem">
+			</a><br/>
 			福岡の情報系の学科に通う大学2年生。某創作サークルの技術系コミュニティに所属。<br/>
 			個人開発やハッカソンでWebアプリ、Bot、Modなどを作っています。<br/>
-			<a href="https://twitter.com/cs1nay">
-				<img height="30rem" width="30rem" src="/twitter.svg" alt="twitter" style="margin:0.3rem;">
-			</a>
-			<a href="https://github.com/claustra01">
-				<img height="30rem" width="30rem" src="/github.svg" alt="github" style="margin:0.3rem;">
-			</a>
+
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
@@ -50,7 +47,7 @@ import Modal from '../components/Modal.astro'
 		max-width: 100ch;
 	}
 	h1 {
-		font-size: 3rem;
+		font-size: 2.5rem;
 		font-weight: 800;
 		margin: 0;
 	}
@@ -66,26 +63,11 @@ import Modal from '../components/Modal.astro'
 		margin: 1rem 0;
 		background-color: white;
 		padding: 1.5rem;
-		border-radius: 2rem;
+		border-radius: 1rem;
 	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
+	.profile strong {
+		font-size: 1.5rem;
 		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
 	}
 	.link-card-grid {
 		display: grid;
