@@ -1,19 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Modal from '../components/Modal.astro'
 ---
 
 <Layout title="claustra01's Portfolio">
 	<main>
 		<h1><span class="text-gradient">claustra01</span>'s Portfolio</h1>
 		<p class="profile">
-			<subtitle>プロフィール</subtitle><br/>
 			claustra01<br/>
 			福岡の情報系の学科に通う大学2年生。某創作サークルの技術系コミュニティに所属。<br/>
 			個人開発やハッカソンでWebアプリ、Bot、Modなどを作っています。<br/>
-			<a href="https://twitter.com/cs1nay">Twitter</a><br/>
-			<a href="https://github.com/claustra01">GitHub</a><br/>
-			<a href="https://zenn.dev/claustra01">Zenn</a>
+			<a href="https://twitter.com/cs1nay">
+				<img height="30rem" width="30rem" src="/twitter.svg" alt="twitter" style="margin:0.3rem;">
+			</a>
+			<a href="https://github.com/claustra01">
+				<img height="30rem" width="30rem" src="/github.svg" alt="github" style="margin:0.3rem;">
+			</a>
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
@@ -44,7 +47,7 @@ import Card from '../components/Card.astro';
 	main {
 		margin: auto;
 		padding: 1.5rem;
-		max-width: 120ch;
+		max-width: 100ch;
 	}
 	h1 {
 		font-size: 3rem;
@@ -55,14 +58,15 @@ import Card from '../components/Card.astro';
 		background-image: linear-gradient(45deg, rgb(67, 186, 255), rgb(31, 0, 135));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		background-size: 400%;
+		background-size: 200%;
 		background-position: 0%;
 	}
 	.profile {
 		line-height: 2;
 		margin: 1rem 0;
 		background-color: white;
-		padding: 2rem;
+		padding: 1.5rem;
+		border-radius: 2rem;
 	}
 	.instructions {
 		line-height: 1.6;
